@@ -122,8 +122,7 @@ function Signin(prop) {
       >
         <p className="signup-head">Login to Your Account</p>
         <p className="signup-desc">
-          Stay Connected-Stay Entertained, Step into the World of YouTube, Join
-          the YouTube Community
+Login to Upload Videos and Delight in Seamless Video Streaming on KLE Platform. Your Gateway to Share and Enjoy a World of Engaging Content!          the YouTube Community
         </p>
       </div>
       <div

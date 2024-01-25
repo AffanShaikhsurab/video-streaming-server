@@ -235,7 +235,7 @@ function LeftPanel() {
 
             <p>Home</p>
           </div>
-          <div
+          {/* <div
             className={
               selected === "trending"
                 ? `trending sec-data ${theme ? "changeBG" : "changeBG-light"}`
@@ -258,8 +258,8 @@ function LeftPanel() {
               />
             )}
             <p>Trending</p>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className={
               selected === "subscription"
                 ? `subscription sec-data ${
@@ -289,7 +289,7 @@ function LeftPanel() {
               />
             )}
             <p>Subscriptions</p>
-          </div>
+          </div> */}
           <div
             className="subscribed-channels"
             style={
@@ -370,7 +370,7 @@ function LeftPanel() {
         </div>
         <hr className={theme ? "seperate" : "seperate-light"} />
         <div className="second-section">
-          <div
+          {/* <div
             className={
               selected === "library"
                 ? `library sec-data ${theme ? "changeBG" : "changeBG-light"}`
@@ -398,9 +398,9 @@ function LeftPanel() {
               />
             )}
             <p>Library</p>
-          </div>
+          </div> */}
 
-          <div
+          {/* <div
             className={
               selected === "watch-later"
                 ? `watch-later sec-data ${
@@ -430,7 +430,7 @@ function LeftPanel() {
               />
             )}
             <p>Watch later</p>
-          </div>
+          </div> */}
           <div
             className={
               selected === "liked-video"
@@ -527,7 +527,6 @@ function LeftPanel() {
           <hr className={theme ? "seperate" : "seperate-light"} />
           <Tooltip
             TransitionComponent={Zoom}
-            title="Made with 💖 by Shubhojeet"
             placement="bottom"
           >
             <div className="developer">
@@ -536,11 +535,10 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
               <a
-                href="https://github.com/shubho0908"
                 target="_blank"
                 rel="noreferrer"
               >
-                Shubhojeet Bera 🚀
+                Video Streaming Kle
               </a>
             </div>
           </Tooltip>
@@ -1353,7 +1351,6 @@ function LeftPanel() {
             <hr className={theme ? "seperate" : "seperate-light"} />
             <Tooltip
               TransitionComponent={Zoom}
-              title="Made with 💖 by Shubhojeet"
               placement="bottom"
             >
               <div className="developer">
@@ -1362,11 +1359,10 @@ function LeftPanel() {
                   style={{ color: theme ? "white" : "black" }}
                 />
                 <a
-                  href="https://github.com/shubho0908"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Shubhojeet Bera 🚀
+                  Video Streaming Kle
                 </a>
               </div>
             </Tooltip>

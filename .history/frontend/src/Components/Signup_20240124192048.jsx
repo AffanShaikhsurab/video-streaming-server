@@ -92,8 +92,8 @@ function Signup() {
       <div className="above-data">
         <p className="signup-head">Create Your Account</p>
         <p className="signup-desc">
-          Unlock Your World of Entertainment, Unlock Your World of
-          Entertainment, Join the YouTube Community
+       Login to Upload Videos and Delight in Seamless Video Streaming on KLE Platform. Your Gateway to Share and Enjoy a World of Engaging Content!
+
         </p>
       </div>
       <div className="signup-form">

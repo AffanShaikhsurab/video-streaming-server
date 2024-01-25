@@ -54,7 +54,7 @@
 
 .youtubeLogo,
 .youtubeLogo2 {
-  width: 110px;
+  width: 0px;
   cursor: pointer;
   padding-left: 30px;
   object-fit: cover;
@@ -383,7 +383,7 @@ form > input::placeholder {
 
 .signup-btn {
   cursor: pointer;
-  background-color: #c00;
+  background-color: rgb(41, 32, 228);
   color: white;
   border: none;
   font-family: "Geologica", sans-serif;

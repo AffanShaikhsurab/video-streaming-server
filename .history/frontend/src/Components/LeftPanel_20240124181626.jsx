@@ -209,6 +209,8 @@ function LeftPanel() {
           menuClicked === false ? { display: "none" } : { display: "block" }
         }
       >
+        --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
         <div className="first-section ">
           <div
             className={
@@ -400,7 +402,7 @@ function LeftPanel() {
             <p>Library</p>
           </div>
 
-          <div
+          {/* <div
             className={
               selected === "watch-later"
                 ? `watch-later sec-data ${
@@ -430,7 +432,7 @@ function LeftPanel() {
               />
             )}
             <p>Watch later</p>
-          </div>
+          </div> */}
           <div
             className={
               selected === "liked-video"
@@ -527,7 +529,6 @@ function LeftPanel() {
           <hr className={theme ? "seperate" : "seperate-light"} />
           <Tooltip
             TransitionComponent={Zoom}
-            title="Made with 💖 by Shubhojeet"
             placement="bottom"
           >
             <div className="developer">
@@ -536,17 +537,15 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
               <a
-                href="https://github.com/shubho0908"
                 target="_blank"
                 rel="noreferrer"
               >
-                Shubhojeet Bera 🚀
+                Video Streaming Kle
               </a>
             </div>
           </Tooltip>
         </div>
       </div>
-
       {/* SHORT HAND  */}
       <div
         className={
@@ -585,7 +584,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
+          {/* <div
             className={
               selected === "trending"
                 ? `trending trending2 sec-data sec-data2 ${
@@ -610,8 +609,8 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className={
               selected === "subscription"
                 ? `subscription subscription2 sec-data sec-data2 ${
@@ -640,7 +639,7 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
+          </div> */}
         </div>
         {/* <hr className="seperate" /> */}
         <div className="second-section">
@@ -1226,7 +1225,7 @@ function LeftPanel() {
               <p>Library</p>
             </div>
 
-            <div
+            {/* <div
               className={
                 selected === "watch-later"
                   ? `watch-later sec-data ${
@@ -1256,7 +1255,7 @@ function LeftPanel() {
                 />
               )}
               <p>Watch later</p>
-            </div>
+            </div> */}
             <div
               className={
                 selected === "liked-video"
@@ -1353,7 +1352,6 @@ function LeftPanel() {
             <hr className={theme ? "seperate" : "seperate-light"} />
             <Tooltip
               TransitionComponent={Zoom}
-              title="Made with 💖 by Shubhojeet"
               placement="bottom"
             >
               <div className="developer">
@@ -1366,7 +1364,7 @@ function LeftPanel() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Shubhojeet Bera 🚀
+                  Video Streaming Kle
                 </a>
               </div>
             </Tooltip>

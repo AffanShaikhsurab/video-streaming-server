@@ -401,37 +401,37 @@ function LeftPanel() {
           </div>
 
           <div
-            className={
-              selected === "watch-later"
-                ? `watch-later sec-data ${
-                    theme ? "changeBG" : "changeBG-light"
-                  }`
-                : "watch-later sec-data"
-            }
-            onClick={() => {
-              if (token) {
-                localStorage.setItem("selected", "watch-later");
-                window.location.href = "/watchlater";
-              } else {
-                setisbtnClicked(true);
-                document.body.classList.add("bg-css");
-              }
-            }}
-          >
-            {selected === "watch-later" ? (
-              <WatchLaterIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            ) : (
-              <WatchLaterOutlinedIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            )}
-            <p>Watch later</p>
-          </div>
-          <div
+          //   className={
+          //     selected === "watch-later"
+          //       ? `watch-later sec-data ${
+          //           theme ? "changeBG" : "changeBG-light"
+          //         }`
+          //       : "watch-later sec-data"
+          //   }
+          //   onClick={() => {
+          //     if (token) {
+          //       localStorage.setItem("selected", "watch-later");
+          //       window.location.href = "/watchlater";
+          //     } else {
+          //       setisbtnClicked(true);
+          //       document.body.classList.add("bg-css");
+          //     }
+          //   }}
+          // >
+          //   {selected === "watch-later" ? (
+          //     <WatchLaterIcon
+          //       fontSize="medium"
+          //       style={{ color: theme ? "white" : "black" }}
+          //     />
+          //   ) : (
+          //     <WatchLaterOutlinedIcon
+          //       fontSize="medium"
+          //       style={{ color: theme ? "white" : "black" }}
+          //     />
+          //   )}
+          //   <p>Watch later</p>
+          // </div>
+          // <div
             className={
               selected === "liked-video"
                 ? `liked-video sec-data ${
@@ -527,7 +527,6 @@ function LeftPanel() {
           <hr className={theme ? "seperate" : "seperate-light"} />
           <Tooltip
             TransitionComponent={Zoom}
-            title="Made with 💖 by Shubhojeet"
             placement="bottom"
           >
             <div className="developer">
@@ -536,11 +535,10 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
               <a
-                href="https://github.com/shubho0908"
                 target="_blank"
                 rel="noreferrer"
               >
-                Shubhojeet Bera 🚀
+                Video Streaming Kle
               </a>
             </div>
           </Tooltip>
@@ -1226,7 +1224,7 @@ function LeftPanel() {
               <p>Library</p>
             </div>
 
-            <div
+            {/* <div
               className={
                 selected === "watch-later"
                   ? `watch-later sec-data ${
@@ -1256,7 +1254,7 @@ function LeftPanel() {
                 />
               )}
               <p>Watch later</p>
-            </div>
+            </div> */}
             <div
               className={
                 selected === "liked-video"
@@ -1353,7 +1351,6 @@ function LeftPanel() {
             <hr className={theme ? "seperate" : "seperate-light"} />
             <Tooltip
               TransitionComponent={Zoom}
-              title="Made with 💖 by Shubhojeet"
               placement="bottom"
             >
               <div className="developer">
@@ -1362,11 +1359,10 @@ function LeftPanel() {
                   style={{ color: theme ? "white" : "black" }}
                 />
                 <a
-                  href="https://github.com/shubho0908"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Shubhojeet Bera 🚀
+                  Video Streaming Kle
                 </a>
               </div>
             </Tooltip>
