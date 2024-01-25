@@ -18,7 +18,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function VideoComments() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-clone-zgrp.vercel.app"
   const { id } = useParams();
   const [Email, setEmail] = useState();
   const [videoComments, setVideoComments] = useState([]);

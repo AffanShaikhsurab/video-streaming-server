@@ -5,7 +5,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function ChannelVideos(prop) {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-clone-zgrp.vercel.app"
   const [myVideos, setMyVideos] = useState([]);
   const [Email, setEmail] = useState();
   const [videosort, setVideoSort] = useState();

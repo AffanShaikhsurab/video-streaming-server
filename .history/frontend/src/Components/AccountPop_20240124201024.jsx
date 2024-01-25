@@ -14,7 +14,7 @@ import Zoom from "@mui/material/Zoom";
 import {SiYoutubestudio} from "react-icons/si"
 
 function AccountPop() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-clone-zgrp.vercel.app"
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [profile, setProfile] = useState("");

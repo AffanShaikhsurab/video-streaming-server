@@ -11,7 +11,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function Trending() {
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://youtube-clone-zgrp.vercel.app";
   const [trendingVideos, setTrendingVideos] = useState([]);
   const [menuClicked, setMenuClicked] = useState(() => {
     const menu = localStorage.getItem("menuClicked");
@@ -48,7 +48,7 @@ function Trending() {
     const getTrending = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/gettrending"
+          "https://youtube-clone-zgrp.vercel.app/gettrending"
         );
         const trending = await response.json();
         if (trending !== "NO DATA") {

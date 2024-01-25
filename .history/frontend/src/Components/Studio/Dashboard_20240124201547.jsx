@@ -14,7 +14,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import noVideo from "../../img/no-video2.png";
 
 function Dashboard() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://youtube-clone-zgrp.vercel.app"
   const [myVideos, setMyVideos] = useState([]);
   const [Email, setEmail] = useState();
   const [dropDown, setDropDown] = useState(true);
