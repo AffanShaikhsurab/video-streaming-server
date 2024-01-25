@@ -583,7 +583,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
+          {/* <div
             className={
               selected === "trending"
                 ? `trending trending2 sec-data sec-data2 ${
@@ -608,7 +608,7 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
+          </div> */}
           <div
             className={
               selected === "subscription"
@@ -672,7 +672,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
+          {/* <div
             className={
               selected === "watch-later"
                 ? `watch-later watch-later2 sec-data sec-data2 ${
@@ -701,7 +701,7 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
+          </div> */}
           <div
             className={
               selected === "liked-video"
@@ -772,7 +772,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
+          {/* <div
             className={
               selected === "trending"
                 ? `trending trending2 sec-data sec-data2 ${
@@ -797,8 +797,8 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className={
               selected === "subscription"
                 ? `subscription subscription2 sec-data sec-data2 ${
@@ -827,11 +827,11 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
+          </div> */}
         </div>
         {/* <hr className="seperate" /> */}
         <div className="second-section">
-          <div
+          {/* <div
             className={
               selected === "library"
                 ? `library library2 sec-data sec-data2 ${
@@ -860,8 +860,8 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className={
               selected === "watch-later"
                 ? `watch-later watch-later2 sec-data sec-data2 ${
@@ -890,7 +890,7 @@ function LeftPanel() {
                 style={{ color: theme ? "white" : "black" }}
               />
             )}
-          </div>
+          </div> */}
           <div
             className={
               selected === "liked-video"
