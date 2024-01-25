@@ -13,7 +13,7 @@ const cors = require("cors");
 auth.use(cors());
 
 // Your base URL
-const URL = "https://youtube-clone-mern-backend.vercel.app";
+const URL = "http://localhost:5173/";
 
 // Signup route
 auth.post("/signup", async (req, res) => {

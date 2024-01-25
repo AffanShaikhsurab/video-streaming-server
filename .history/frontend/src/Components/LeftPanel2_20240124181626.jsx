@@ -21,7 +21,7 @@ import { BiCommentDetail } from "react-icons/bi";
 import { MdOutlineAutoFixHigh } from "react-icons/md";
 
 function LeftPanel2() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const [email, setEmail] = useState("");
   const token = localStorage.getItem("userToken");
   const [profileIMG, setProfileIMG] = useState();
@@ -226,74 +226,8 @@ function LeftPanel2() {
             />
             <p>Dashboard</p>
           </div>
-          <div
-            className={
-              StudioSection === "Content"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `content panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Content");
-              window.location.href = "/studio/video";
-            }}
-          >
-            <VideoLibraryOutlinedIcon
-              className={
-                StudioSection === "Content" ? "studio-icon2" : "studio-icon"
-              }
-              fontSize="medium"
-              style={{ color: "#A9A9A9" }}
-            />
-            <p>Content</p>
-          </div>
-          <div
-            className={
-              StudioSection === "Comments"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `comments panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Comments");
-              window.location.href = "/studio/comments";
-            }}
-          >
-            <ChatOutlinedIcon
-              className={
-                StudioSection === "Comments" ? "studio-icon2" : "studio-icon"
-              }
-              fontSize="medium"
-              style={{ color: "#A9A9A9" }}
-            />
-            <p>Comments</p>
-          </div>
-          <div
-            className={
-              StudioSection === "Customization"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `customization panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Customization");
-              window.location.href = "/studio/customize";
-            }}
-          >
-            <AutoFixHighOutlinedIcon
-              className={
-                StudioSection === "Customization"
-                  ? "studio-icon2"
-                  : "studio-icon"
-              }
-              fontSize="medium"
-              style={{ color: "#A9A9A9" }}
-            />
-            <p>Customization</p>
-          </div>
+         
+        
         </div>
       </div>
 
@@ -387,101 +321,7 @@ function LeftPanel2() {
               />
             </Tooltip>
           </div>
-          <div
-            className={
-              StudioSection === "Content"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `content panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Content");
-              window.location.href = "/studio/video";
-            }}
-          >
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="Content"
-              placement="bottom"
-            >
-              <VideoLibraryOutlinedIcon
-                className={
-                  StudioSection === "Content" ? "studio-icon2" : "studio-icon"
-                }
-                fontSize="medium"
-                style={{
-                  color: "#A9A9A9",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                }}
-              />
-            </Tooltip>
-          </div>
-          <div
-            className={
-              StudioSection === "Comments"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `comments panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Comments");
-              window.location.href = "/studio/comments";
-            }}
-          >
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="Comments"
-              placement="bottom"
-            >
-              <ChatOutlinedIcon
-                className={
-                  StudioSection === "Comments" ? "studio-icon2" : "studio-icon"
-                }
-                fontSize="medium"
-                style={{
-                  color: "#A9A9A9",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                }}
-              />
-            </Tooltip>
-          </div>
-          <div
-            className={
-              StudioSection === "Customization"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `customization panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Customization");
-              window.location.href = "/studio/customize";
-            }}
-          >
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="Customization"
-              placement="bottom"
-            >
-              <AutoFixHighOutlinedIcon
-                className={
-                  StudioSection === "Customization"
-                    ? "studio-icon2"
-                    : "studio-icon"
-                }
-                fontSize="medium"
-                style={{
-                  color: "#A9A9A9",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                }}
-              />
-            </Tooltip>
-          </div>
+         ""
         </div>
       </div>
 
@@ -570,101 +410,7 @@ function LeftPanel2() {
               />
             </Tooltip>
           </div>
-          <div
-            className={
-              StudioSection === "Content"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `content panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Content");
-              window.location.href = "/studio/video";
-            }}
-          >
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="Content"
-              placement="bottom"
-            >
-              <VideoLibraryOutlinedIcon
-                className={
-                  StudioSection === "Content" ? "studio-icon2" : "studio-icon"
-                }
-                fontSize="medium"
-                style={{
-                  color: "#A9A9A9",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                }}
-              />
-            </Tooltip>
-          </div>
-          <div
-            className={
-              StudioSection === "Comments"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `comments panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Comments");
-              window.location.href = "/studio/comments";
-            }}
-          >
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="Comments"
-              placement="bottom"
-            >
-              <ChatOutlinedIcon
-                className={
-                  StudioSection === "Comments" ? "studio-icon2" : "studio-icon"
-                }
-                fontSize="medium"
-                style={{
-                  color: "#A9A9A9",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                }}
-              />
-            </Tooltip>
-          </div>
-          <div
-            className={
-              StudioSection === "Customization"
-                ? `${theme ? "studio-active" : "studio-active-light"} panel ${
-                    theme ? "" : "panel-light"
-                  }`
-                : `customization panel ${theme ? "" : "panel-light"}`
-            }
-            onClick={() => {
-              localStorage.setItem("Studio-Section", "Customization");
-              window.location.href = "/studio/customize";
-            }}
-          >
-            <Tooltip
-              TransitionComponent={Zoom}
-              title="Customization"
-              placement="bottom"
-            >
-              <AutoFixHighOutlinedIcon
-                className={
-                  StudioSection === "Customization"
-                    ? "studio-icon2"
-                    : "studio-icon"
-                }
-                fontSize="medium"
-                style={{
-                  color: "#A9A9A9",
-                  paddingTop: "16px",
-                  paddingBottom: "16px",
-                }}
-              />
-            </Tooltip>
-          </div>
+         ""
         </div>
       </div>
 
@@ -709,71 +455,7 @@ function LeftPanel2() {
             window.location.href = "/studio/video";
           }}
         >
-          <Tooltip
-            TransitionComponent={Zoom}
-            title="Content"
-            placement="bottom"
-          >
-            <MdOutlineVideoLibrary
-              className={
-                StudioSection === "Content" ? "studio-icon3" : "studio-icon-new"
-              }
-              fontSize="26px"
-              style={{
-                color: "#A9A9A9",
-              }}
-            />
-          </Tooltip>
-        </div>
-        <div
-          className="hori-comments"
-          onClick={() => {
-            localStorage.setItem("Studio-Section", "Comments");
-            window.location.href = "/studio/comments";
-          }}
-        >
-          <Tooltip
-            TransitionComponent={Zoom}
-            title="Comments"
-            placement="bottom"
-          >
-            <BiCommentDetail
-              className={
-                StudioSection === "Comments"
-                  ? "studio-icon3"
-                  : "studio-icon-new"
-              }
-              fontSize="26px"
-              style={{
-                color: "#A9A9A9",
-              }}
-            />
-          </Tooltip>
-        </div>
-        <div
-          className="hori-customize"
-          onClick={() => {
-            localStorage.setItem("Studio-Section", "Customization");
-            window.location.href = "/studio/customize";
-          }}
-        >
-          <Tooltip
-            TransitionComponent={Zoom}
-            title="Customization"
-            placement="bottom"
-          >
-            <MdOutlineAutoFixHigh
-              className={
-                StudioSection === "Customization"
-                  ? "studio-icon3"
-                  : "studio-icon-new"
-              }
-              fontSize="26px"
-              style={{
-                color: "#A9A9A9",
-              }}
-            />
-          </Tooltip>
+          
         </div>
       </div>
     </>

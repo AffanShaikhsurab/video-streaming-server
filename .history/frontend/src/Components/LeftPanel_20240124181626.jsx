@@ -37,7 +37,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import { MdVideoLibrary } from "react-icons/md";
 
 function LeftPanel() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const [menuClicked, setMenuClicked] = useState(() => {
     const menu = localStorage.getItem("menuClicked");
     return menu ? JSON.parse(menu) : false;
@@ -246,18 +246,7 @@ function LeftPanel() {
               window.location.href = "/trending";
             }}
           >
-            {selected === "trending" ? (
-              <WhatshotIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            ) : (
-              <WhatshotOutlinedIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            )}
-            <p>Trending</p>
+           
           </div>
           <div
             className={
@@ -540,7 +529,8 @@ function LeftPanel() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Shubhojeet Bera 🚀
+                 KLE Video Streaming APP
+
               </a>
             </div>
           </Tooltip>
@@ -585,32 +575,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
-            className={
-              selected === "trending"
-                ? `trending trending2 sec-data sec-data2 ${
-                    theme ? "changeBG" : "changeBG-light"
-                  }`
-                : "trending trending2 sec-data sec-data2"
-            }
-            onClick={() => {
-              localStorage.setItem("selected", "trending");
-
-              window.location.href = "/trending";
-            }}
-          >
-            {selected === "trending" ? (
-              <WhatshotIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            ) : (
-              <WhatshotOutlinedIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            )}
-          </div>
+         
           <div
             className={
               selected === "subscription"
@@ -774,32 +739,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
-            className={
-              selected === "trending"
-                ? `trending trending2 sec-data sec-data2 ${
-                    theme ? "changeBG" : "changeBG-light"
-                  }`
-                : "trending trending2 sec-data sec-data2"
-            }
-            onClick={() => {
-              localStorage.setItem("selected", "trending");
-
-              window.location.href = "/trending";
-            }}
-          >
-            {selected === "trending" ? (
-              <WhatshotIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            ) : (
-              <WhatshotOutlinedIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            )}
-          </div>
+        
           <div
             className={
               selected === "subscription"
@@ -1366,7 +1306,8 @@ function LeftPanel() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Shubhojeet Bera 🚀
+                   KLE Video Streaming APP
+
                 </a>
               </div>
             </Tooltip>

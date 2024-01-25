@@ -14,7 +14,7 @@ import Zoom from "@mui/material/Zoom";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 function AccountPop() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [profile, setProfile] = useState("");
@@ -123,22 +123,9 @@ function AccountPop() {
               fontSize="medium"
               style={{ color: theme ? "#909090" : "black" }}
             />
-            <p>Your channel</p>
+            <p>Your Videos</p>
           </div>
-          <div
-            className={
-              theme ? "yourstudio c-sec" : "yourstudio c-sec preview-lightt"
-            }
-            onClick={() => {
-              window.location.href = "/";
-            }}
-          >
-            <YouTubeIcon
-              fontSize="medium"
-              style={{ color: theme ? "#909090" : "black" }}
-            />
-            <p>YouTube</p>
-          </div>
+         
           <div
             className={
               theme ? "apperance c-sec" : "apperance c-sec preview-lightt"

@@ -23,7 +23,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function OtherChannel() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const { id } = useParams();
   const [Email, setEmail] = useState();
   const [newEmail, setnewEmail] = useState();
@@ -427,18 +427,7 @@ function OtherChannel() {
                 </div>
                 {newEmail === Email ? (
                   <div className="channel-right-content channel-dualbtns">
-                    <button
-                      className={
-                        theme
-                          ? "customize-channel"
-                          : "customize-channel btn-light-mode"
-                      }
-                      onClick={() => {
-                        window.location.href = "/studio/customize";
-                      }}
-                    >
-                      Customize channel
-                    </button>
+                   
                     <button
                       className={
                         theme ? "manage-videos" : "manage-videos btn-light-mode"

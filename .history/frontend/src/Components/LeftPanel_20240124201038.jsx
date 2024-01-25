@@ -235,30 +235,7 @@ function LeftPanel() {
 
             <p>Home</p>
           </div>
-          <div
-            className={
-              selected === "trending"
-                ? `trending sec-data ${theme ? "changeBG" : "changeBG-light"}`
-                : "trending sec-data"
-            }
-            onClick={() => {
-              localStorage.setItem("selected", "trending");
-              window.location.href = "/trending";
-            }}
-          >
-            {selected === "trending" ? (
-              <WhatshotIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            ) : (
-              <WhatshotOutlinedIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            )}
-            <p>Trending</p>
-          </div>
+         
           <div
             className={
               selected === "subscription"
@@ -540,7 +517,8 @@ function LeftPanel() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Shubhojeet Bera 🚀
+                 KLE Video Streaming APP
+
               </a>
             </div>
           </Tooltip>
@@ -774,32 +752,7 @@ function LeftPanel() {
               />
             )}
           </div>
-          <div
-            className={
-              selected === "trending"
-                ? `trending trending2 sec-data sec-data2 ${
-                    theme ? "changeBG" : "changeBG-light"
-                  }`
-                : "trending trending2 sec-data sec-data2"
-            }
-            onClick={() => {
-              localStorage.setItem("selected", "trending");
-
-              window.location.href = "/trending";
-            }}
-          >
-            {selected === "trending" ? (
-              <WhatshotIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            ) : (
-              <WhatshotOutlinedIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-            )}
-          </div>
+         
           <div
             className={
               selected === "subscription"
@@ -1366,7 +1319,8 @@ function LeftPanel() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Shubhojeet Bera 🚀
+                   KLE Video Streaming APP
+
                 </a>
               </div>
             </Tooltip>

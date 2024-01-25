@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 import "../Css/theme.css";
 
 function Browse() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const [thumbnails, setThumbnails] = useState([]);
   const [Titles, setTitles] = useState();
   const [uploader, setUploader] = useState();
@@ -93,7 +93,7 @@ function Browse() {
     const getVideos = async () => {
       try {
         const response = await fetch(
-          "https://youtube-clone-mern-backend.vercel.app/getvideos"
+          "http://localhost:5173//getvideos"
         );
         const {
           thumbnailURLs,

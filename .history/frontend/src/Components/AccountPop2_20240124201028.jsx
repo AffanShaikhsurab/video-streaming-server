@@ -123,7 +123,7 @@ function AccountPop() {
               fontSize="medium"
               style={{ color: theme ? "#909090" : "black" }}
             />
-            <p>Your channel</p>
+            <p>Your Videos</p>
           </div>
           <div
             className={

@@ -11,7 +11,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function ChannelHome(prop) {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const [myVideos, setMyVideos] = useState([]);
   const [Email, setEmail] = useState();
   const token = localStorage.getItem("userToken");
@@ -709,29 +709,7 @@ function ChannelHome(prop) {
             theme ? "section-headtxt" : "section-headtxt text-light-mode"
           }
         >
-          <div className="inside-headtxt">
-            <p className="section-title">Popular videos</p>
-            <div
-              className={theme ? "playall-videos" : "playall-videos-light"}
-              onClick={() => {
-                if (token) {
-                  updateViews(AllVideos.sort(sortByViews)[0]._id);
-                  window.location.href = `/video/${
-                    AllVideos.sort(sortByViews)[0]._id
-                  }`;
-                }
-                window.location.href = `/video/${
-                  AllVideos.sort(sortByViews)[0]._id
-                }`;
-              }}
-            >
-              <PlayArrowIcon
-                fontSize="medium"
-                style={{ color: theme ? "white" : "black" }}
-              />
-              <p className="playall-txt">Play all</p>
-            </div>
-          </div>
+         
           {AllVideos && AllVideos.length >= 5 ? (
             <p
               className="see-all2"
@@ -1472,48 +1450,7 @@ function ChannelHome(prop) {
                 : "block",
           }}
         >
-          <div
-            className={
-              theme ? "section-headtxt" : "section-headtxt text-light-mode"
-            }
-          >
-            <div className="inside-headtxt">
-              <p className="section-title">Popular videos</p>
-              <div
-                className={theme ? "playall-videos" : "playall-videos-light"}
-                onClick={() => {
-                  if (token) {
-                    updateViews(AllVideos.sort(sortByViews)[0]._id);
-                    window.location.href = `/video/${
-                      AllVideos.sort(sortByViews)[0]._id
-                    }`;
-                  }
-                  window.location.href = `/video/${
-                    AllVideos.sort(sortByViews)[0]._id
-                  }`;
-                }}
-              >
-                <PlayArrowIcon
-                  fontSize="medium"
-                  style={{ color: theme ? "white" : "black" }}
-                />
-                <p className="playall-txt">Play all</p>
-              </div>
-            </div>
-            {AllVideos && AllVideos.length >= 5 ? (
-              <p
-                className="see-all2"
-                onClick={() => {
-                  localStorage.setItem("Section", "Videos");
-                  window.location.reload();
-                }}
-              >
-                See all
-              </p>
-            ) : (
-              ""
-            )}
-          </div>
+         
           <div className="my-all-videos-list2">
             {AllVideos &&
               AllVideos.length > 0 &&

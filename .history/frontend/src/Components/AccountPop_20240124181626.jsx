@@ -14,7 +14,7 @@ import Zoom from "@mui/material/Zoom";
 import {SiYoutubestudio} from "react-icons/si"
 
 function AccountPop() {
-  const backendURL = "https://youtube-clone-mern-backend.vercel.app"
+  const backendURL = "http://localhost:5173/"
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [profile, setProfile] = useState("");
@@ -148,20 +148,9 @@ function AccountPop() {
               fontSize="medium"
               style={{ color: theme ? "white" : "black" }}
             />
-            <p>Your channel</p>
+            <p>Your Videos</p>
           </div>
-          <div
-            className={theme ? "yourstudio c-sec" : "yourstudio c-sec2"}
-            onClick={() => {
-              window.location.href = "/studio";
-            }}
-          >
-            <SiYoutubestudio
-              fontSize="21px"
-              style={{ color: theme ? "white" : "black" }}
-            />
-            <p>YouTube Studio</p>
-          </div>
+         
           <div
             className={theme ? "apperance c-sec" : "apperance c-sec2"}
             onClick={() => {

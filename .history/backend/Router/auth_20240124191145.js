@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const userData = require("../Models/user");
 const auth = express.Router();
 const nodemailer = require("NodeMailer");
-const URL = "https://youtube-clone-mern-backend.vercel.app";
+const URL = "http://localhost:5173/";
 const cors = require("cors"); // Add cors middleware
 auth.use(cors()); // Enable CORS for all routes in the auth router
 
