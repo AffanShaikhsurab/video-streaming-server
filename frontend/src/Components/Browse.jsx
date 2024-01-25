@@ -82,13 +82,8 @@ function Browse() {
   const Tags = [
     "All",
     "Artificial Intelligence",
-    "Comedy",
-    "Gaming",
     "Vlog",
-    "Beauty",
     "Travel",
-    "Food",
-    "Fashion",
   ];
 
   useEffect(() => {

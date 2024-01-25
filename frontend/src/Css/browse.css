@@ -15,7 +15,7 @@
 
 .top-tags {
   cursor: pointer;
-  background-color: #292929;
+  background-color:  #0800ff;
   padding: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -30,28 +30,28 @@
   width: max-content;
 }
 
-/* 
+
 .top-tags:hover {
-  background-color: #3f3f3f;
-} */
+  background-color: #4a4a4a;
+}
 
 .tag-color {
   background-color: white;
-  color: #0f0f0f;
+  color:  rgb(45, 73, 255);
 }
 
 .tag-color-light {
-  background-color: black;
-  color: white;
+  background-color:  #0800ff;
+  color: rgb(45, 73, 255);
 }
 
 .tagcolor-newlight {
   background-color: #f0f0f0;
-  color: black;
+  color:  rgb(45, 73, 255);
 }
 
 .browse-data {
-  background-color: #0f0f0f;
+  background-color:  #0800ff;
   width: calc(100% - 250px);
   position: relative;
   left: 250px;
@@ -67,7 +67,7 @@
 }
 
 .browse {
-  background-color: #0f0f0f;
+  background-color:  #0800ff;
   display: flex;
 }
 
