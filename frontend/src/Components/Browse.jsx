@@ -82,7 +82,6 @@ function Browse() {
   const Tags = [
     "All",
     "Artificial Intelligence",
-    "Vlog",
     "Travel",
   ];
 
