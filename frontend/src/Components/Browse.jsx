@@ -76,9 +76,7 @@ function Browse() {
   }, [menuClicked]);
 
   const Tags = [
-    "All",
-    "Artificial Intelligence",
-    "Travel",
+   
   ];
 
   useEffect(() => {

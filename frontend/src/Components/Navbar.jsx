@@ -122,7 +122,7 @@ function Navbar() {
             }}
           />
         </div>
-        <div className="middle-bar">
+        {/* <div className="middle-bar">
           <div className={theme ? "search" : "search light-mode light-border"}>
             <input
               type="text"
@@ -143,7 +143,7 @@ function Navbar() {
               }}
             />
           </div>
-        </div>
+        </div> */}
         <div
           className="right-bar"
           style={
@@ -309,7 +309,7 @@ function Navbar() {
       >
         <AccountPop />
       </div>
-      <div
+      {/* <div
         className={theme ? "new-searchbar" : "new-searchbar2"}
         style={{
           display: newSearch && window.innerWidth <= 940 ? "flex" : "none",
@@ -339,7 +339,7 @@ function Navbar() {
             onClick={() => setNewSearch(false)}
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
