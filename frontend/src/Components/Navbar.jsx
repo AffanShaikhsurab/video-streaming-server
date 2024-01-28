@@ -122,28 +122,9 @@ function Navbar() {
             }}
           />
         </div>
-        {/* <div className="middle-bar">
-          <div className={theme ? "search" : "search light-mode light-border"}>
-            <input
-              type="text"
-              placeholder="Type to search"
-              id={theme ? "searchType" : "searchType-light-mode"}
-              value={data2 ? data2 : searchedData}
-              onChange={handleSearch}
-              onKeyDown={handleKeyPress}
-            />
-            <IoIosSearch
-              className={theme ? "search-icon" : "search-light-icon"}
-              fontSize="28px"
-              style={{ color: theme ? "rgb(160, 160, 160)" : "black" }}
-              onClick={() => {
-                if (searchedData) {
-                  window.location.href = `/results/${searchedData}`;
-                }
-              }}
-            />
-          </div>
-        </div> */}
+       <div>
+       <h1 style={{ color: "white" , marginLeft : "100px"}}>Video Streaming KLE</h1>
+       </div>
         <div
           className="right-bar"
           style={

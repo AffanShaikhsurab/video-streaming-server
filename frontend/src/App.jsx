@@ -1,7 +1,8 @@
 import Browse from "./Components/Browse";
 import Studio from "./Components/Studio";
-// import FirstPage from "./Components/firstpage";
 import Error from "./Components/Error";
+// import FirstPage from "./Components/firstpage";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import VideoSection from "./Components/VideoSection";
 import LikeVideos from "./Components/LikeVideos";
@@ -22,6 +23,7 @@ import { Helmet } from "react-helmet";
 import ytLogo from "./img/icon.png";
 
 import "react-toastify/dist/ReactToastify.css";
+import HomePage from "./Components/HomePage";
 
 function App() {
   const token = localStorage.getItem("userToken");
@@ -45,10 +47,14 @@ function App() {
           <link rel="icon" type="image/x-icon" href={ytLogo} />
         </Helmet>
         <Routes>
-          {/* <Route path="/" element={<FirstPage />} /> */}
-          <Route path="/" element={<Browse />} />
+          
+          <Route path="/" element={<HomePage />} />
+          <Route path="/main" element={<Browse />} />
+
           <Route path="/home" element={<Browse />} />
+
           <Route path="/studio" element={token ? <Studio /> : <Error />} />
+
           <Route
             path="/studio/customize"
             element={token ? <Customization /> : <Error />}

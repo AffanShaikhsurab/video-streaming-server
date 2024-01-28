@@ -76,7 +76,6 @@ function Browse() {
   }, [menuClicked]);
 
   const Tags = [
-   
   ];
 
   useEffect(() => {
@@ -166,12 +165,14 @@ function Browse() {
 
   return (
     <>
+    
       <Navbar />
       <LeftPanel />
       <SkeletonTheme
         baseColor={theme ? "#353535" : "#aaaaaa"}
         highlightColor={theme ? "#444" : "#b6b6b6"}
       >
+        
         <div
           className={theme ? "browse" : "browse light-mode"}
           style={loading === true ? { display: "flex" } : { display: "none" }}
