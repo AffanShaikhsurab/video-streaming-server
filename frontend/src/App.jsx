@@ -1,5 +1,6 @@
 import Browse from "./Components/Browse";
 import Studio from "./Components/Studio";
+// import FirstPage from "./Components/firstpage";
 import Error from "./Components/Error";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import VideoSection from "./Components/VideoSection";
@@ -44,6 +45,7 @@ function App() {
           <link rel="icon" type="image/x-icon" href={ytLogo} />
         </Helmet>
         <Routes>
+          {/* <Route path="/" element={<FirstPage />} /> */}
           <Route path="/" element={<Browse />} />
           <Route path="/home" element={<Browse />} />
           <Route path="/studio" element={token ? <Studio /> : <Error />} />

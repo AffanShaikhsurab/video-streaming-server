@@ -34,18 +34,14 @@ function Browse() {
     const Dark = localStorage.getItem("Dark");
     return Dark ? JSON.parse(Dark) : true;
   });
-
   const token = localStorage.getItem("userToken");
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
   useEffect(() => {
     const handleMenuButtonClick = () => {
       setMenuClicked((prevMenuClicked) => !prevMenuClicked);
     };
-
     const menuButton = document.querySelector(".menu");
     if (menuButton) {
       menuButton.addEventListener("click", handleMenuButtonClick);

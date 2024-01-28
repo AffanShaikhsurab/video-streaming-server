@@ -6,10 +6,8 @@ const path = require("path");
 const port = 3000;
 const bodyParser = require("body-parser");
 
-// Use cors middleware to enable CORS
 app.use(cors());
 
-// Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, "public")));
 
 // Middlewares

@@ -7,7 +7,7 @@ function Signup() {
   const backendURL = "http://localhost:3000"
   const [data, setData] = useState({});
   const [theme, setTheme] = useState(() => {
-    const Dark = localStorage.getItem("Dark");
+    const Dark = localStorage.getItem("light");
     return Dark ? JSON.parse(Dark) : true;
   });
 
