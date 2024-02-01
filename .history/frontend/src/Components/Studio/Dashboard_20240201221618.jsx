@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
 import "../../Css/Studio/dashboard.css";
 import jwtDecode from "jwt-decode";
-import BarChartOutlinedIcon from "@mui/icons-material/BarChartOutlined";
-import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
-import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
-import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import ModeEditOutlineOutlinedIcon from "@mui/icons-material/ModeEditOutlineOutlined";
-import YoutubeIcon from "@mui/icons-material/Youtube";
+
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import noVideo from "../../img/no-video2.png";
