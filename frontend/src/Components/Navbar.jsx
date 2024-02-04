@@ -202,6 +202,7 @@ function Navbar() {
             </div>
           </SkeletonTheme>
           <img
+// sourcery skip: simplify-ternary
             src={profilePic ? profilePic : avatar}
             alt="user profile pic"
             loading="lazy"
