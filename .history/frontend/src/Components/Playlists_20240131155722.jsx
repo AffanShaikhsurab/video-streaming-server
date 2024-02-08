@@ -153,7 +153,7 @@ function Playlists() {
   document.title =
     PlaylistName && PlaylistName !== undefined
       ? `${PlaylistName} - Video Streaming Kle`
-      : "Youtube";
+      : "Video Streaming Kle";
 
   useEffect(() => {
     const handleMenuButtonClick = () => {

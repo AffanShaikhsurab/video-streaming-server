@@ -56,7 +56,7 @@ function SearchResults() {
     }, 4000);
   }, []);
 
-  document.title = data && data !== undefined ? `${data} - Video Streaming Kle` : "Youtube";
+  document.title = data && data !== undefined ? `${data} - Video Streaming Kle` : "Video Streaming Kle";
 
   const token = localStorage.getItem("userToken");
 

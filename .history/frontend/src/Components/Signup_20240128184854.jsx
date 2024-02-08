@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Signup() {
-  const backendURL = "https://video-streaming-kle.vercel.app"
+  const backendURL = "http://localhost:3000"
   const [data, setData] = useState({});
   const [theme, setTheme] = useState(() => {
     const Dark = localStorage.getItem("light");
