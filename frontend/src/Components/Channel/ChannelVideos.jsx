@@ -5,7 +5,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function ChannelVideos(prop) {
-  const backendURL = "https://video-streaming-kle.vercel.app"
+  const backendURL = "http://localhost:3000"
   const [myVideos, setMyVideos] = useState([]);
   const [Email, setEmail] = useState();
   const [videosort, setVideoSort] = useState();

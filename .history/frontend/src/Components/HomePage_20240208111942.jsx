@@ -62,7 +62,7 @@ const HomePage = () => {
         marginTop: "20px",
         textAlign: "center",
       }}>
-        <a href="http://localhost:5173/home" target="_blank" rel="noopener noreferrer" style={{
+        <a href="http://localhost:3000/home" target="_blank" rel="noopener noreferrer" style={{
           display: "inline-block",
           padding: "10px 20px",
           margin: "0 10px",

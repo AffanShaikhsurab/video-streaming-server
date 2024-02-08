@@ -24,7 +24,7 @@ const FirstPage = () => {
                 </nav>
                 <h1>Video Streaming Server</h1>
                 <div className="links">
-                    <a href="http://localhost:5173/home" target="_blank" rel="noopener noreferrer">
+                    <a href="http://localhost:3000/home" target="_blank" rel="noopener noreferrer">
                         Home
                     </a>
                 </div>

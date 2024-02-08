@@ -134,10 +134,10 @@ function AccountPop() {
               window.location.href = "/home";
             }}
           >
-            {/* <Logo
+            <Logo
               fontSize="medium"
               style={{ color: theme ? "#909090" : "black" }}
-            /> */}
+            />
             <p>Video Streaming Kle</p>
           </div>
           <div

@@ -20,7 +20,7 @@ function generateRandomColors(count) {
 }
 
 function ChannelPlaylists(prop) {
-  const backendURL = "https://video-streaming-kle.vercel.app"
+  const backendURL = "http://localhost:3000"
   const [PlaylistData, setPlaylistData] = useState([]);
   const [email, setEmail] = useState();
   const [playlistColors, setPlaylistColors] = useState([]);

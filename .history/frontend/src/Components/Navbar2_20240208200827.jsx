@@ -988,7 +988,7 @@ function Navbar2() {
                               title="View on Video Streaming Kle"
                               placement="bottom"
                             >
-                              {/* <YoutubeIcon
+                              <YoutubeIcon
                                 className={
                                   theme ? "watch-this" : "watch-this-light"
                                 }
@@ -997,7 +997,7 @@ function Navbar2() {
                                 onClick={() => {
                                   window.location.href = `/video/${element._id}`;
                                 }}
-                              /> */}
+                              />
                             </Tooltip>
                           </div>
                         </div>

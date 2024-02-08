@@ -11,8 +11,6 @@ import ArrowBackOutlinedIcon from "@mui/icons-material/ArrowBackOutlined";
 import DoneOutlinedIcon from "@mui/icons-material/DoneOutlined";
 import Tooltip from "@mui/material/Tooltip";
 import Zoom from "@mui/material/Zoom";
-import Logo from "../img/logo1.png";
-
 
 function AccountPop() {
   const backendURL = "http://localhost:3000"
@@ -134,10 +132,10 @@ function AccountPop() {
               window.location.href = "/home";
             }}
           >
-            {/* <Logo
+            <YoutubeIcon
               fontSize="medium"
               style={{ color: theme ? "#909090" : "black" }}
-            /> */}
+            />
             <p>Video Streaming Kle</p>
           </div>
           <div
