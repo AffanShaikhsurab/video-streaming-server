@@ -9,7 +9,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function LikeVideos() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [email, setEmail] = useState();
   const [name, setName] = useState();
   const [menuClicked, setMenuClicked] = useState(() => {
@@ -23,7 +23,7 @@ function LikeVideos() {
     return Dark ? JSON.parse(Dark) : true;
   });
   const token = localStorage.getItem("userToken");
-  document.title = "Liked videos - Video Streaming Kle";
+  document.title = "Liked videos - Streaming Server";
 
   useEffect(() => {
     const token = localStorage.getItem("userToken");

@@ -17,7 +17,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function SearchResults() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const { data } = useParams();
   const [myemail, setmyEmail] = useState();
   const [searchedVideoData, setsearchedVideoData] = useState([]);
@@ -56,7 +56,7 @@ function SearchResults() {
     }, 4000);
   }, []);
 
-  document.title = data && data !== undefined ? `${data} - Video Streaming Kle` : "Video Streaming Kle";
+  document.title = data && data !== undefined ? `${data} - Streaming Server` : "Streaming Server";
 
   const token = localStorage.getItem("userToken");
 

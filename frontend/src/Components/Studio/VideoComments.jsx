@@ -18,7 +18,7 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 
 function VideoComments() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const { id } = useParams();
   const [Email, setEmail] = useState();
   const [videoComments, setVideoComments] = useState([]);
@@ -34,7 +34,7 @@ function VideoComments() {
     return Dark ? JSON.parse(Dark) : true;
   });
 
-  document.title = "Video comments - Video Streaming Kle Studio";
+  document.title = "Video comments - Streaming Server Studio";
 
   useEffect(() => {
     const handleMenuButtonClick = () => {

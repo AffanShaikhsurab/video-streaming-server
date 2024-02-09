@@ -34,7 +34,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LanguageIcon from "@mui/icons-material/Language";
 
 function Studio() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [email, setEmail] = useState("");
   const [isChannel, setisChannel] = useState();
   const [selectedImage, setSelectedImage] = useState(null);
@@ -428,7 +428,7 @@ function Studio() {
       };
 
       // Proceed with saving the channel data
-      const response = await fetch("http://localhost:3000/savechannel", {
+      const response = await fetch("https://vercelbackendkle.onrender.com/savechannel", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -565,7 +565,7 @@ function Studio() {
           Visibility: visibility,
         };
         // Send the POST request
-        const response = await fetch("http://localhost:3000/publish", {
+        const response = await fetch("https://vercelbackendkle.onrender.com/publish", {
           method: "POST",
           body: JSON.stringify(data),
           headers: {
@@ -653,7 +653,7 @@ function Studio() {
           />
           <p className="channel-head">Create Your Channel</p>
           <p className={theme ? "channel-slogan" : "channel-slogan text-light-mode2"}>
-            Share Your Story: Inspire and Connect with a Video Streaming Kle Channel!
+            Share Your Story: Inspire and Connect with a Streaming Server Channel!
           </p>
           <form onSubmit={saveChannelData} className="channel-deatils">
             <div className="profile-pic-section">
@@ -1083,7 +1083,7 @@ function Studio() {
                     width="284.44"
                     height="160"
                     src={VideoURL}
-                    title="Video Streaming Kle video player"
+                    title="Streaming Server video player"
                     frameBorder="0"
                     allowFullScreen
                   ></iframe>

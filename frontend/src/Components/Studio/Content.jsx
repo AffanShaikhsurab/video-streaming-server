@@ -24,7 +24,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Content() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [userVideos, setUserVideos] = useState([]);
   const [sortByDateAsc, setSortByDateAsc] = useState(true);
   const [Email, setEmail] = useState();
@@ -34,7 +34,7 @@ function Content() {
   const [isDeleteClicked, setIsDeleteClicked] = useState(false);
   const [DeleteVideoData, setDeleteVideoData] = useState();
   const [boxclicked, setBoxClicked] = useState(false);
-  const videoUrl = "http://localhost:5173/video";
+  const videoUrl = "https://video-streaming-kle.vercel.app/video";
   const [loading, setLoading] = useState(true);
   const [menu, setmenu] = useState(() => {
     const menu = localStorage.getItem("studioMenuClicked");
@@ -45,7 +45,7 @@ function Content() {
     return Dark ? JSON.parse(Dark) : true;
   });
 
-  document.title = "Channel content - Video Streaming Kle Studio";
+  document.title = "Channel content - Streaming Server Studio";
 
   //TOASTS
 
@@ -496,7 +496,7 @@ function Content() {
                             </Tooltip>
                             <Tooltip
                               TransitionComponent={Zoom}
-                              title="View on Video Streaming Kle"
+                              title="View on Streaming Server"
                               placement="bottom"
                             >
                               <YoutubeIcon
@@ -800,7 +800,7 @@ function Content() {
             }
           />
           <p>
-            I understand that deleting a video from Video Streaming Kle is permanent and
+            I understand that deleting a video from Streaming Server is permanent and
             cannot be undone.
           </p>
         </div>

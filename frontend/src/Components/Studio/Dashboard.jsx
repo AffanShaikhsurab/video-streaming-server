@@ -6,7 +6,7 @@ import "react-loading-skeleton/dist/skeleton.css";
 import noVideo from "../../img/no-video2.png";
 
 function Dashboard() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [myVideos, setMyVideos] = useState([]);
   const [Email, setEmail] = useState();
   const [dropDown, setDropDown] = useState(true);
@@ -23,7 +23,7 @@ function Dashboard() {
     return Dark ? JSON.parse(Dark) : true;
   });
 
-  document.title = "Channel dashboard - Video Streaming Kle Studio";
+  document.title = "Channel dashboard - Streaming Server Studio";
 
   useEffect(() => {
     const token = localStorage.getItem("userToken");

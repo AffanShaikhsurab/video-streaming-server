@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Reset from "./Reset";
 
 function Signin(prop) {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [data, setData] = useState({});
   const [showReset, setShowReset] = useState(false);
   const [theme, setTheme] = useState(() => {
@@ -122,7 +122,7 @@ function Signin(prop) {
       >
         <p className="signup-head">Login to Your Account</p>
         <p className="signup-desc">
-Login to Upload Videos and Delight in Seamless Video Streaming on KLE Platform. Your Gateway to Share and Enjoy a World of Engaging Content!          the Video Streaming Kle Community
+Login to Upload Videos and Delight in Seamless Video Streaming on KLE Platform. Your Gateway to Share and Enjoy a World of Engaging Content!          the Streaming Server Community
         </p>
       </div>
       <div

@@ -20,13 +20,13 @@ import "react-toastify/dist/ReactToastify.css";
 import { GrUndo } from "react-icons/gr";
 
 function VideoDetails() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const { id } = useParams();
   const [videodata, setVideoData] = useState();
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewDescription, setPreviewDescription] = useState("");
   const [previewTags, setPreviewTags] = useState("");
-  const videolink = "http://localhost:5173/video";
+  const videolink = "https://video-streaming-kle.vercel.app/video";
   const [thumbnailImage, setThumbnailImage] = useState(null);
   const [thumbnailSelected, setThumbnailSelected] = useState(false);
   const [finalThumbnail, setFinalThumbnail] = useState(null);
@@ -47,7 +47,7 @@ function VideoDetails() {
   });
   const optionRef = useRef();
 
-  document.title = "Video details - Video Streaming Kle Studio";
+  document.title = "Video details - Streaming Server Studio";
 
   //TOASTS
 
@@ -639,7 +639,7 @@ function VideoDetails() {
                 height="220"
                 className="playable-videoedit"
                 src={videodata && videodata.videoURL}
-                title="Video Streaming Kle video player"
+                title="Streaming Server video player"
                 frameBorder="0"
                 allowFullScreen
               ></iframe>

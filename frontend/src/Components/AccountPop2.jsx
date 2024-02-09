@@ -15,7 +15,7 @@ import Logo from "../img/logo1.png";
 
 
 function AccountPop() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [profile, setProfile] = useState("");
@@ -138,7 +138,7 @@ function AccountPop() {
               fontSize="medium"
               style={{ color: theme ? "#909090" : "black" }}
             /> */}
-            <p>Video Streaming Kle</p>
+            <p>Streaming Server</p>
           </div>
           <div
             className={

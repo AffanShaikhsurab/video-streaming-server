@@ -36,7 +36,7 @@ import LeftPanel from "./LeftPanel";
 import Error from "./Error";
 
 function VideoSection() {
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://vercelbackendkle.onrender.com";
   const { id } = useParams();
   const [videoData, setVideoData] = useState(null);
   const [email, setEmail] = useState();
@@ -735,7 +735,7 @@ function VideoSection() {
   } = matchedVideo;
 
   document.title =
-    Title && Title !== undefined ? `${Title} - Video Streaming Kle` : "Video Streaming Kle";
+    Title && Title !== undefined ? `${Title} - Streaming Server` : "Streaming Server";
 
   const likeVideo = async () => {
     try {

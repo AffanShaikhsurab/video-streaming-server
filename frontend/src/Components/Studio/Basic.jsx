@@ -11,12 +11,12 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function Basic() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const [Email, setEmail] = useState("");
   const [channelName, setChannelName] = useState();
   const [channelDescription, setChannelDescription] = useState();
   const [channelID, setChannelID] = useState("");
-  const channelUrl = "http://localhost:5173/channel";
+  const channelUrl = "https://video-streaming-kle.vercel.app/channel";
   const channelIDInputRef = useRef(null);
   const [Basicchanges, setBasicChanges] = useState(false);
   const [Linkchanges, setLinkChanges] = useState(false);
@@ -261,7 +261,7 @@ function Basic() {
             }
           >
             Choose a channel name that represents you and your content. Changes
-            made to your name and picture are visible only on Video Streaming Kle.
+            made to your name and picture are visible only on Streaming Server.
           </p>
           {channelName === undefined ? (
             <input

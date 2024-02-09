@@ -22,7 +22,7 @@ import { RxCross1 } from "react-icons/rx";
 import { AiOutlineVideoCameraAdd } from "react-icons/ai";
 
 function Navbar() {
-  const backendURL = "http://localhost:3000"
+  const backendURL = "https://vercelbackendkle.onrender.com"
   const { data } = useParams();
   const [data2, setData] = useState(data);
   const [isbtnClicked, setisbtnClicked] = useState(false);
@@ -124,7 +124,7 @@ function Navbar() {
         </div>
        <div>
        <a href="/home" style={{ textDecoration: "none" }}>
- <h1 style={{ color: "white" , marginLeft : "100px"}}>Video Streaming Kle</h1></a> 
+ <h1 style={{ color: "white" , marginLeft : "100px"}}>Streaming Server</h1></a> 
        </div>
         <div
           className="right-bar"
@@ -142,7 +142,7 @@ function Navbar() {
           />
           <Tooltip
             TransitionComponent={Zoom}
-            title="Video Streaming Kle studio"
+            title="Streaming Server studio"
             placement="bottom"
           >
             <AiOutlineVideoCameraAdd
