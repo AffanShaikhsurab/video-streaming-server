@@ -20,7 +20,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { GrUndo } from "react-icons/gr";
 
 function VideoDetails() {
-  const backendURL = "https://vercelbackendkle.onrender.com"
+  const backendURL = "http://localhost:3000"
   const { id } = useParams();
   const [videodata, setVideoData] = useState();
   const [previewTitle, setPreviewTitle] = useState("");
